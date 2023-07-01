@@ -1,0 +1,73 @@
+.editorContainer{
+    background-color: #57575d;
+    flex-grow: 1;
+}
+
+.expand{
+    background-color: #57575d;
+    flex-grow: 0;
+    .topIconsContainer{
+        margin-left: 10px;
+    }
+}
+
+.topcontainer{
+    display: flex;
+}
+
+
+.topIconsContainer{
+    display: flex;
+    gap: 0px 10px;
+    align-items: center;
+    width: max-content;
+    margin-left: auto;
+    padding-right: 10px;
+}
+
+.topIcons{
+    background-color: #57575d;
+    padding: 0px 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.iconsname{
+    display: flex;
+    gap: 0px 5px;
+    padding: 5px 10px;
+    border-top-style: solid;
+    border-top-width: 5px;
+    border-top-color: #252529;
+}
+
+.iconsname >img {
+    object-fit: cover;
+    height: 25px;
+    width: 25px;
+}.iconsname >p {
+    font-weight: 700;
+}
+
+.settings{
+    background-color: #333339;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.mainCode{
+    padding: 10px;
+    height: 400px;
+}
+
+.CodeMirror{
+    height: 400px!important;
+    overflow-y: scroll !important;
+}
+
+.CodeMirror-gutters{
+    background-color: #1d1e22 !important;
+}
+.CodeMirror-scroll{
+    background-color: #1d1e22 !important;
+}

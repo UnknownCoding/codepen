@@ -1,0 +1,7 @@
+.codeocontainer{
+    display: flex;
+    align-items: center;
+    gap: 0px 10px;
+    color: white;
+    width: 100%;
+}
