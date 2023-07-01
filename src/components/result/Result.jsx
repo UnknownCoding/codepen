@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import './result.css'
+import { GiExpander } from 'react-icons/gi';
 import { MainDataContext } from '../../context/DataProvider'
 
 const Result = () => {
@@ -29,7 +30,10 @@ const Result = () => {
 
     return (
         <div className='resultconatiner'>   
-            <iframe srcDoc={src} title='Output' sandbox='allow-scripts' frameBorder={0} width="100" height="100%"/>
+            <iframe className='iframResult' srcDoc={src} title='Output' sandbox='allow-scripts' frameBorder={0} />
+            <div className='expandbutton'>
+                <GiExpander/>
+            </div>
         </div>
     )
 }
