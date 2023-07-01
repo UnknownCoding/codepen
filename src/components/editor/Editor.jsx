@@ -14,8 +14,10 @@ const Editor = ({src,heading,value,onChange}) => {
         onChange(value)
     }
     const [full,setFull] = useState(false)
+    const [opts,setOpts] = useState(false)
+    const [size,setSize] = useState(null)
     return (
-        <section className={`editorContainer ${full && 'expand'}`}>
+        <section className={`editorContainer ${full && 'expand'}`} style={{fontSize:`${size && `${size}px` }`}}>
             <div className='topcontainer'>
                 <div className='iconsname'>
                     <img className='' src={src}/>
@@ -23,7 +25,7 @@ const Editor = ({src,heading,value,onChange}) => {
                 </div>
                 <div className='settings'>
                     <div className='topIconsContainer'>
-                        <div className='topIcons'>
+                        <div className='topIcons' onClick={()=>setOpts(!opts)}>
                             <FcSettings/>
                         </div>
                         <div className='topIcons' onClick={()=>setFull(!full)}>

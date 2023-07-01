@@ -60,9 +60,9 @@
     height: 400px;
 }
 
+
 .CodeMirror{
     height: 400px!important;
-    overflow-y: scroll !important;
 }
 
 .CodeMirror-gutters{
